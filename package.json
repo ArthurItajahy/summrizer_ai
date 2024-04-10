@@ -2,12 +2,15 @@
   "name": "sumarizer_ai",
   "private": true,
   "version": "0.0.0",
+   "homepage": "https://github.com/ArthurItajahy/summrizer_ai",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+     "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.3",
